@@ -601,7 +601,7 @@ footer .links{display:flex;gap:18px;flex-wrap:wrap;font-weight:600;color:var(--i
    CHECKOUT_LINKS: paste your payment links (Systeme.io, Stripe Payment Links, Gumroad…).
    While a link is empty, the button collects the email for the launch list instead.
    handleEmail(): send the address to your email tool. */
-const CHECKOUT_LINKS = { book:"", ledger:"", charts:"", ledger_gift:"", book_gift:"" };
+const CHECKOUT_LINKS = { book:"", ledger:"", charts:"https://buy.stripe.com/4gMbJ2gnL9LD8ra9fQdMI00", ledger_gift:"", book_gift:"" };
 function handleEmail(email, source){ /* e.g. fetch to your email tool's form endpoint */ }
 
 const PRODUCTS = {
@@ -685,6 +685,7 @@ gift.addEventListener("change", renderCheckout);
 document.addEventListener("click", e=>{
   const o = e.target.closest("[data-open]"); if (o){ lastFocus = o; openReader(+o.dataset.open); return; }
   const b = e.target.closest("[data-buy]");
+  if (b && !PRODUCTS[b.dataset.buy].bump && CHECKOUT_LINKS[b.dataset.buy]){ location.href = CHECKOUT_LINKS[b.dataset.buy]; return; }
   if (b){ current = b.dataset.buy; gift.checked = false; thanks.hidden = true;
     document.getElementById("c-ok").hidden = true; document.querySelector('[data-err="checkout"]').hidden = true;
     renderCheckout(); openOverlay(checkout, "#email-checkout"); }
