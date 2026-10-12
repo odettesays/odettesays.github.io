@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Odette Says</title>
+<meta name="description" content="Odette checks the kitchen and home tricks you see online. Get her free notebook: 12 tricks, the honest verdict, and the method that really works.">
+<meta property="og:title" content="Odette Says — is it true?">
+<meta property="og:description" content="12 viral kitchen & home tricks, checked. Free notebook from Odette.">
+<meta property="og:image" content="https://quentinmorvan37.github.io/odette-says/img/odette-face.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2334455A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23F1C232' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap">
+<style>
+/* Layout: a kitchen ledger read like a letter from Odette — ruled paper, slate-blue apron band, verdict stamps as the one bold device. */
+:root{
+  --paper:#F6F1E6; --paper-2:#EDE5D5; --card:#FBF8F1;
+  --ink:#27241F; --muted:#6A6258; --rule:rgba(74,93,115,.10); --line:#DDD2BF;
+  --slate:#4A5D73; --slate-deep:#34455A; --on-slate:#F6F1E6; --on-slate-muted:#D3CBBD;
+  --true:#367248; --half:#B67812; --false:#A9352A; --yolk:#F1C232;
+  --display:"Young Serif", Georgia, "Times New Roman", serif;
+  --body:"Lora", Georgia, serif;
+  --ui:"Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --hand:"Caveat", "Segoe Script", cursive;
+  --shadow:0 18px 40px -18px rgba(39,36,31,.45);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1A2028; --paper-2:#212935; --card:#242D39;
+  --ink:#EEE7D9; --muted:#A79F92; --rule:rgba(238,231,217,.05); --line:#36414F;
+  --slate:#8FA6C2; --slate-deep:#2E3B4C; --on-slate:#F6F1E6; --on-slate-muted:#C9C0B1;
+  --true:#6FBF84; --half:#E3A93E; --false:#E07264; --yolk:#F1C232;
+  --shadow:0 18px 40px -18px rgba(0,0,0,.7); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#1A2028; --paper-2:#212935; --card:#242D39;
+  --ink:#EEE7D9; --muted:#A79F92; --rule:rgba(238,231,217,.05); --line:#36414F;
+  --slate:#8FA6C2; --slate-deep:#2E3B4C; --on-slate:#F6F1E6; --on-slate-muted:#C9C0B1;
+  --true:#6FBF84; --half:#E3A93E; --false:#E07264; --yolk:#F1C232;
+  --shadow:0 18px 40px -18px rgba(0,0,0,.7); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
+  background-image:repeating-linear-gradient(180deg,transparent 0 31px,var(--rule) 31px 32px)}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;text-wrap:balance;margin:0}
+h2{font-size:clamp(30px,4.4vw,46px)}
+p{margin:0}
+.eyebrow{font-family:var(--ui);font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate)}
+.hand{font-family:var(--hand);font-weight:600;color:var(--slate)}
+.muted{color:var(--muted)}
+:focus-visible{outline:3px solid var(--yolk);outline-offset:3px;border-radius:4px}
+section{padding-block:76px;scroll-margin-top:60px}
+.head{display:grid;gap:12px;max-width:660px}
+.head p{color:var(--muted)}
+.head.center{margin-inline:auto;text-align:center}
+
+.stamp{display:inline-flex;align-items:center;font-family:var(--ui);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  border:2.5px solid currentColor;border-radius:6px;padding:5px 11px;transform:rotate(-4deg);white-space:nowrap;
+  box-shadow:inset 0 0 0 2px var(--paper),inset 0 0 0 3.5px currentColor}
+.stamp.true{color:var(--true)}.stamp.half{color:var(--half)}.stamp.false{color:var(--false)}
+
+.btn{font-family:var(--ui);font-weight:600;font-size:15px;border:0;border-radius:999px;padding:14px 24px;cursor:pointer;
+  background:var(--ink);color:var(--paper);display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.yolk{background:var(--yolk);color:#27241F}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.block{width:100%}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:11px}
+.mark{font-family:var(--display);font-size:22px;text-decoration:none;display:flex;align-items:baseline;gap:6px;white-space:nowrap}
+.mark span{font-family:var(--hand);color:var(--slate);font-size:24px}
+.top nav{display:flex;gap:8px;align-items:center}
+.top nav a.link{font-family:var(--ui);font-size:14px;font-weight:500;text-decoration:none;padding:8px 10px}
+.top .btn{padding:10px 18px;font-size:14px}
+
+/* hero */
+.hero{padding-block:52px 70px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero .copy{min-width:0}
+.hello{font-family:var(--hand);font-size:32px;color:var(--slate);line-height:1}
+.hero h1{font-size:clamp(42px,6.2vw,74px);letter-spacing:-.01em;margin-top:10px}
+.hero h1 em{font-style:normal;color:var(--slate);position:relative;white-space:nowrap}
+.hero h1 em:after{content:"";position:absolute;left:-2%;right:-2%;bottom:.06em;height:.16em;background:var(--yolk);opacity:.75;z-index:-1;border-radius:3px}
+.hero .lede{margin-top:20px;font-size:19px;color:var(--muted);max-width:33em}
+.signup{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap;max-width:520px}
+.signup input{flex:1 1 230px;min-width:0;font-family:var(--ui);font-size:15px;padding:14px 20px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.signup input::placeholder{color:var(--muted)}
+.fine{margin-top:12px;font-family:var(--ui);font-size:13px;color:var(--muted);display:flex;gap:6px 14px;flex-wrap:wrap}
+.fine b{color:var(--ink);font-weight:600}
+.err{margin-top:10px;font-family:var(--ui);font-size:14px;color:var(--false)}
+.stage{position:relative;max-width:420px;justify-self:center;width:100%}
+.stage .portrait{border-radius:10px;box-shadow:var(--shadow);width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;background:var(--slate)}
+.stage .book-mini{position:absolute;right:-30px;bottom:-34px;width:40%;aspect-ratio:875/1240;border-radius:4px;transform:rotate(5deg);box-shadow:0 18px 30px -12px rgba(0,0,0,.55);border:4px solid var(--card)}
+.stage .note{position:absolute;left:-44px;bottom:70px;background:var(--card);padding:10px 16px 12px;border-radius:4px;box-shadow:0 10px 24px -14px rgba(0,0,0,.5);transform:rotate(-6deg);font-family:var(--hand);font-size:26px;line-height:1.05;color:var(--slate)}
+.stage .note small{display:block;font-size:18px;color:var(--muted)}
+.stage .s1{position:absolute;right:-18px;top:34px;transform:rotate(8deg);background:var(--paper)}
+.stage .s2{position:absolute;right:-26px;top:88px;transform:rotate(-5deg);background:var(--paper)}
+
+.strip{background:var(--slate-deep);color:var(--on-slate);font-family:var(--ui);font-size:14px;letter-spacing:.03em}
+.strip .wrap{display:flex;gap:8px 28px;flex-wrap:wrap;justify-content:center;padding-block:15px;text-align:center}
+.strip b{color:var(--yolk);font-weight:600}
+
+/* story */
+.story .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.snap{margin:0;background:var(--card);padding:10px 10px 0;border-radius:4px;box-shadow:var(--shadow);transform:rotate(-2deg);max-width:360px}
+.snap img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:2px}
+.snap figcaption{font-family:var(--hand);font-size:23px;color:var(--slate);padding:6px 4px 10px;text-align:center}
+.story .text{display:grid;gap:16px;min-width:0}
+.story .text p{font-size:18px;line-height:1.7}
+.story .text p.big{font-family:var(--display);font-size:clamp(24px,3vw,30px);line-height:1.25}
+.story .sig{font-family:var(--hand);font-size:32px;color:var(--slate)}
+
+/* game */
+.game{background:var(--paper-2);border-block:1px solid var(--line)}
+.game-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.score{font-family:var(--ui);font-size:14px;color:var(--muted);text-align:right}
+.score strong{display:block;font-family:var(--display);font-weight:400;font-size:40px;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 22px 20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.card .tag{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.card h3{font-size:21px;line-height:1.22}
+.choices{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.choices button{font-family:var(--ui);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:9px 12px;border-radius:6px;cursor:pointer;background:transparent;border:1.5px solid var(--line);color:var(--ink)}
+.choices button:hover{border-color:var(--ink)}
+.reveal{display:none;gap:10px;flex-direction:column}
+.card.done .choices{display:none}
+.card.done .reveal{display:flex}
+.reveal .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.reveal .you{font-family:var(--ui);font-size:13px;font-weight:600}
+.reveal .you.right{color:var(--true)}.reveal .you.wrong{color:var(--false)}
+.reveal p{font-size:15px;line-height:1.5;color:var(--muted)}
+.game-foot{margin-top:30px;display:flex;align-items:center;gap:14px 20px;flex-wrap:wrap}
+.game-foot p{font-family:var(--hand);font-size:26px;color:var(--slate)}
+
+/* big book */
+.book-hero{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start;margin-top:40px}
+.bigcover{aspect-ratio:3/4;border-radius:6px;box-shadow:var(--shadow);position:relative;overflow:hidden;max-width:360px;width:100%;justify-self:center;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,transparent 1px 4px),repeating-linear-gradient(0deg,rgba(0,0,0,.07) 0 1px,transparent 1px 5px),#4A5D73;color:#F6F1E6;transform:rotate(-2deg)}
+.bigcover .lbl{position:absolute;left:9%;right:9%;top:9%;background:#F6F1E6;color:#27241F;padding:20px 18px 18px;border-radius:2px}
+.bigcover .lbl:before{content:"";position:absolute;inset:6px;border:1px solid #4A5D73;pointer-events:none}
+.bigcover .lbl small{font-family:var(--ui);font-weight:600;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#4A5D73}
+.bigcover .lbl b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(24px,3.2vw,32px);line-height:1.02;margin-top:8px}
+.bigcover .lbl i{font-family:var(--body);color:#4A5D73;font-size:15px;display:block;margin-top:8px}
+.bigcover .face{position:absolute;left:50%;bottom:9%;width:46%;transform:translateX(-50%) rotate(3deg);background:#FBF8F1;padding:6px 6px 22px;box-shadow:0 10px 18px -8px rgba(0,0,0,.5)}
+.bigcover .face img{aspect-ratio:4/5;object-fit:cover;object-position:50% 25%}
+.bigcover .n101{position:absolute;right:7%;bottom:30%;background:var(--yolk);color:#27241F;font-family:var(--ui);font-weight:700;font-size:13px;letter-spacing:.06em;padding:10px 12px;border-radius:50%;width:74px;height:74px;display:grid;place-items:center;text-align:center;line-height:1.05;transform:rotate(10deg)}
+.chapters{list-style:none;margin:0;padding:0;display:grid}
+.chapters li{display:grid;grid-template-columns:34px 1fr auto;gap:14px;align-items:baseline;padding-block:13px;border-bottom:1px solid var(--line)}
+.chapters li:first-child{border-top:1px solid var(--line)}
+.chapters .n{font-family:var(--display);color:var(--slate);font-size:20px}
+.chapters b{font-family:var(--display);font-weight:400;font-size:19px;display:block}
+.chapters span.d{font-size:14.5px;color:var(--muted);display:block;margin-top:2px}
+.chapters .c{font-family:var(--ui);font-size:13px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.anatomy{margin-top:26px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.anatomy div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px}
+.anatomy b{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);display:block;margin-bottom:4px}
+.anatomy p{font-size:14.5px;line-height:1.45;color:var(--muted)}
+.book-actions{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+
+/* for you */
+.foryou{background:var(--slate-deep);color:var(--on-slate)}
+.foryou .eyebrow{color:var(--yolk)}
+.foryou h2{color:var(--on-slate)}
+.foryou .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 40px;margin-top:34px}
+.foryou .item{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start}
+.foryou .item i{font-style:normal;font-family:var(--ui);font-weight:700;color:var(--yolk);font-size:18px;line-height:1.5}
+.foryou .item p{color:var(--on-slate-muted);font-size:17px}
+.foryou .item p b{color:var(--on-slate);font-weight:500}
+
+/* offers */
+.offers{display:grid;grid-template-columns:1fr 1.12fr;gap:22px;max-width:920px;margin:40px auto 0;align-items:stretch}
+.offer{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:16px;min-width:0;position:relative}
+.offer.main{background:var(--slate-deep);color:var(--on-slate);border-color:transparent;box-shadow:var(--shadow)}
+.offer .ribbon{position:absolute;top:-14px;left:28px;background:var(--yolk);color:#27241F;font-family:var(--ui);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.offer .kind{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--slate)}
+.offer.main .kind{color:var(--yolk)}
+.offer h3{font-size:30px}
+.offer .desc{font-size:15.5px;color:var(--muted)}
+.offer.main .desc{color:var(--on-slate-muted)}
+.offer ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;font-size:15.5px}
+.offer li{display:grid;grid-template-columns:20px 1fr auto;gap:8px;align-items:baseline}
+.offer li:before{content:"✓";font-family:var(--ui);font-weight:700;color:var(--true)}
+.offer.main li:before{color:var(--yolk)}
+.offer li s,.offer li em{font-family:var(--ui);font-size:13px;font-style:normal;color:var(--muted);white-space:nowrap}
+.offer.main li em{color:var(--on-slate-muted)}
+.price{display:flex;align-items:baseline;gap:12px;margin-top:auto;font-family:var(--ui);flex-wrap:wrap}
+.price strong{font-family:var(--display);font-weight:400;font-size:50px;line-height:1}
+.price s{font-size:18px;color:var(--muted)}
+.offer.main .price s{color:var(--on-slate-muted)}
+.price span{font-size:13px;color:var(--muted);flex-basis:100%}
+.offer.main .price span{color:var(--on-slate-muted)}
+.offer.main .btn{background:var(--yolk);color:#27241F}
+.offer .note{font-family:var(--hand);font-size:22px;color:var(--yolk);line-height:1.1}
+.paynote{text-align:center;margin-top:20px;font-family:var(--ui);font-size:13.5px;color:var(--muted)}
+
+/* guarantee */
+.promise .wrap{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;max-width:880px}
+.seal{width:150px;height:150px;border-radius:50%;border:3px solid var(--true);color:var(--true);display:grid;place-items:center;text-align:center;font-family:var(--ui);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px;line-height:1.3;transform:rotate(-8deg);box-shadow:inset 0 0 0 5px var(--paper),inset 0 0 0 7px var(--true)}
+.seal b{display:block;font-family:var(--display);font-weight:400;font-size:44px;letter-spacing:0;line-height:1}
+.promise p{font-size:18px;line-height:1.65}
+.promise .sig{font-family:var(--hand);font-size:30px;color:var(--slate);margin-top:8px}
+
+/* inside */
+.shelf{display:flex;gap:16px;overflow-x:auto;padding:6px 4px 18px;scroll-snap-type:x mandatory;margin-top:28px}
+.shelf button{flex:0 0 150px;padding:0;border:0;background:none;cursor:pointer;scroll-snap-align:start;text-align:left;font-family:var(--ui);font-size:12px;color:var(--muted)}
+.shelf img{border-radius:4px;box-shadow:0 8px 20px -12px rgba(0,0,0,.45);margin-bottom:8px;aspect-ratio:875/1240;width:100%;background:var(--card);transition:transform .2s}
+.shelf button:hover img{transform:translateY(-4px)}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;max-width:900px}
+.about .snap{max-width:230px;transform:rotate(3deg)}
+.about .snap img{aspect-ratio:1/1;object-position:50% 25%}
+.about .line{font-family:var(--display);font-size:clamp(24px,3.2vw,32px);line-height:1.22}
+.about p+p{margin-top:12px;color:var(--muted)}
+
+/* faq */
+.faq .wrap{max-width:780px}
+details{border-top:1px solid var(--line);padding-block:18px}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-family:var(--display);font-size:21px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:var(--ui);font-size:22px;color:var(--slate);flex:none}
+details[open] summary:after{content:"–"}
+details p{margin-top:10px;color:var(--muted);font-size:16px;max-width:60ch}
+
+/* final letter */
+.final{background:var(--slate-deep);color:var(--on-slate)}
+.final .wrap{max-width:760px}
+.final .paper{background:var(--card);color:var(--ink);border-radius:4px;padding:40px 38px 34px 58px;position:relative;box-shadow:var(--shadow);
+  background-image:repeating-linear-gradient(180deg,transparent 0 29px,var(--rule) 29px 30px)}
+.final .paper:before{content:"";position:absolute;top:0;bottom:0;left:34px;width:1.5px;background:var(--false);opacity:.3}
+.final .paper p{font-size:18px;line-height:1.7}
+.final .paper p+p{margin-top:14px}
+.final .paper .sig{font-family:var(--hand);font-size:34px;color:var(--slate)}
+.final .paper .ps{font-size:16px;color:var(--muted)}
+.final .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+footer{padding-block:34px;font-family:var(--ui);font-size:12.5px;color:var(--muted)}
+footer .wrap{display:grid;gap:10px}
+footer .links{display:flex;gap:18px;flex-wrap:wrap;font-weight:600;color:var(--ink)}
+
+/* overlays */
+.overlay{position:fixed;inset:0;z-index:50;background:rgba(15,18,23,.66);display:grid;place-items:center;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px));overflow-y:auto}
+.box{background:var(--card);color:var(--ink);border-radius:14px;padding:28px;max-width:480px;width:100%;box-shadow:var(--shadow);display:grid;gap:14px;position:relative}
+.box h3{font-size:28px}
+.box p{color:var(--muted);font-size:16px}
+.box .x{position:absolute;top:10px;right:10px;background:none;border:0;font-family:var(--ui);color:var(--muted);cursor:pointer;font-size:14px;padding:8px}
+.box .signup{margin-top:0}
+.oto{border:2px dashed var(--yolk);border-radius:10px;padding:16px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;background:var(--paper)}
+.oto .thumb{width:64px;height:84px;border-radius:4px;background:repeating-linear-gradient(0deg,rgba(0,0,0,.06) 0 1px,transparent 1px 8px),#F6F1E6;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--ui);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#4A5D73;text-align:center;line-height:1.3;padding:4px}
+.oto ul{margin:6px 0 0;padding-left:18px;font-size:14px;color:var(--muted)}
+.oto .p{font-family:var(--ui);font-size:14px;margin-top:6px}
+.oto .p b{font-family:var(--display);font-weight:400;font-size:26px}
+.oto .p s{color:var(--muted);margin-left:6px}
+.skip{background:none;border:0;font-family:var(--ui);font-size:14px;color:var(--muted);text-decoration:underline;cursor:pointer;padding:6px}
+.summary{display:grid;gap:8px;font-family:var(--ui);font-size:15px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:12px}
+.summary div{display:flex;justify-content:space-between;gap:12px}
+.summary .tot{font-weight:600;font-size:17px}
+.bump{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;background:color-mix(in srgb,var(--yolk) 18%,var(--card));border:1.5px dashed var(--half);border-radius:10px;padding:14px;cursor:pointer}
+.bump input{width:20px;height:20px;margin-top:3px;accent-color:var(--true)}
+.bump b{font-family:var(--ui);font-weight:600;font-size:15px;display:block}
+.bump span{font-size:14.5px;color:var(--muted)}
+.okmsg{font-family:var(--ui);font-size:14.5px;color:var(--true);font-weight:500}
+.reader{position:fixed;inset:0;z-index:60;background:rgba(15,18,23,.88);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px))}
+.reader img{max-height:calc(100% - 90px);height:auto;width:auto;max-width:min(560px,100%);border-radius:4px;box-shadow:0 30px 60px -20px #000;aspect-ratio:875/1240;object-fit:contain}
+.reader .bar{display:flex;align-items:center;gap:12px;font-family:var(--ui);color:#F6F1E6;font-size:14px}
+.reader .bar button{font:inherit;font-weight:600;background:#F6F1E6;color:#27241F;border:0;border-radius:999px;padding:9px 16px;cursor:pointer}
+.reader .bar button:disabled{opacity:.35;cursor:default}
+.reader .close{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:16px;background:none;border:0;color:#F6F1E6;font-family:var(--ui);font-size:15px;cursor:pointer;padding:8px}
+.reader .bar span{font-variant-numeric:tabular-nums;min-width:60px;text-align:center}
+
+@media (max-width:900px){
+  .hero .wrap,.story .wrap,.book-hero{grid-template-columns:1fr;gap:44px}
+  .stage{max-width:340px;margin-bottom:24px}
+  .story .snap{max-width:280px;justify-self:center}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .anatomy{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .offers{grid-template-columns:1fr;max-width:480px}
+  .offer.main{order:-1}
+  .foryou .grid{grid-template-columns:1fr}
+  .about .wrap,.promise .wrap{grid-template-columns:1fr;justify-items:start}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding-block:56px}
+  .top nav a.link{display:none}
+  .cards{grid-template-columns:1fr}
+  .score{text-align:left}
+  .stage .s2{right:-10px}.stage .s1{right:-6px}.stage .book-mini{right:-8px}.stage .note{left:-8px}
+  .final .paper{padding:30px 22px 26px 40px}.final .paper:before{left:22px}
+  .offer{padding:24px 20px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top">Odette Says <span>is it true?</span></a>
+    <nav>
+      <a class="link" href="#book">The Big Book</a>
+      <a class="btn yolk" href="#top">Free notebook</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="copy">
+      <div class="hello">Bonjour, ma chère.</div>
+      <h1>Before you try that trick, <em>ask Odette.</em></h1>
+      <p class="lede">I check the kitchen and home tricks you see online, one by one, and tell you which ones are true. Start with my little notebook: twelve tricks, the honest verdict, and the method that really works. It's free.</p>
+      <form class="signup" data-form="hero" novalidate>
+        <input id="email-hero" type="email" placeholder="Your email address" aria-label="Your email address" autocomplete="email" required>
+        <button class="btn" type="submit">Send me the free notebook</button>
+      </form>
+      <p class="err" data-err="hero" hidden></p>
+      <div class="fine"><span><b>Free</b> · 12 pages · PDF</span><span>Plus my Sunday letter, once a week</span></div>
+    </div>
+    <div class="stage">
+      <img class="portrait" src="img/odette-entier.jpg" alt="Odette in her kitchen, in a linen shirt and slate-blue apron" width="572" height="1024">
+      <img class="book-mini" src="pages/p-01.jpg" alt="Cover of Odette's Little Notebook" width="875" height="1240">
+      <span class="stamp true s1">True</span>
+      <span class="stamp false s2">False</span>
+      <div class="note">Let me check.<small>— Odette</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip"><div class="wrap">
+  <span><b>2</b> new verdicts every day</span><span>TikTok · Instagram · YouTube</span><span>at <b>12:00</b> and <b>18:00</b>, Paris time</span>
+</div></div>
+
+<section class="story">
+  <div class="wrap">
+    <figure class="snap"><img src="img/odette-profil.jpg" alt="Odette checking a glass jar at her kitchen counter" width="572" height="1024"><figcaption>Every trick, checked at my counter.</figcaption></figure>
+    <div class="text">
+      <div class="eyebrow">Why I check everything</div>
+      <p class="big">My mother kept a little notebook by the stove. Only the things that really worked went inside.</p>
+      <p>A stain that came out. A sauce with no lumps. The right way to keep parsley. If a trick failed twice, she crossed it out with one firm line. I still remember the sound of the pencil.</p>
+      <p>Today the tricks arrive on a phone, faster than any of us can test them. Some are wonderful. Many are only good for the camera. So I do what she did: I try it, I find the reason, and only then I write it down.</p>
+      <p>That notebook is what I share with you here.</p>
+      <div class="sig">Bisous, Odette</div>
+    </div>
+  </div>
+</section>
+
+<section class="game" id="game">
+  <div class="wrap">
+    <div class="game-head">
+      <div class="head">
+        <div class="eyebrow">A little game first</div>
+        <h2>Guess my verdict.</h2>
+        <p>Six tricks you have probably seen this year. True, half true or false? Choose, and I tell you what really happens.</p>
+      </div>
+      <div class="score" aria-live="polite"><strong id="score">0 / 6</strong>right so far</div>
+    </div>
+    <div class="cards" id="cards"></div>
+    <div class="game-foot">
+      <p id="game-msg">The other six are in my free notebook.</p>
+      <a class="btn" href="#top">Get the free notebook</a>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">The Big Book of Verdicts</div>
+      <h2>101 tricks. Every one checked, explained, and fixed.</h2>
+      <p>Everything from my notebook in one place. Keep it on your phone, or print it and keep it in the kitchen drawer. The type is large and easy to read.</p>
+    </div>
+    <div class="book-hero">
+      <div class="bigcover" role="img" aria-label="Cover of Odette's Big Book of Verdicts">
+        <div class="lbl"><small>Odette Says</small><b>The Big Book of Verdicts</b><i>101 kitchen &amp; home tricks, checked</i></div>
+        <div class="n101">101<br>tricks</div>
+        <div class="face"><img src="img/odette-face.jpg" alt="" width="572" height="1024"></div>
+      </div>
+      <div>
+        <ol class="chapters">
+          <li><span class="n">1</span><div><b>The fridge &amp; the pantry</b><span class="d">What keeps, how long, and where. Stop throwing food away.</span></div><span class="c">14 tricks</span></li>
+          <li><span class="n">2</span><div><b>Eggs, milk &amp; sauces</b><span class="d">Peeling, whisking, saving a sauce that split.</span></div><span class="c">12 tricks</span></li>
+          <li><span class="n">3</span><div><b>Fruit, vegetables &amp; herbs</b><span class="d">Ripening, washing, keeping herbs green for two weeks.</span></div><span class="c">14 tricks</span></li>
+          <li><span class="n">4</span><div><b>Bread, baking &amp; leftovers</b><span class="d">Reviving stale bread, freezing, cooking the second day.</span></div><span class="c">11 tricks</span></li>
+          <li><span class="n">5</span><div><b>Limescale &amp; the kitchen sink</b><span class="d">Kettle, taps, shower head, the white crust everywhere.</span></div><span class="c">12 tricks</span></li>
+          <li><span class="n">6</span><div><b>Laundry &amp; stains</b><span class="d">Wine, grease, coffee, yellowed collars. What really lifts it.</span></div><span class="c">14 tricks</span></li>
+          <li><span class="n">7</span><div><b>Wood, steel, glass &amp; stone</b><span class="d">Which surfaces hate vinegar and lemon, and what to use instead.</span></div><span class="c">12 tricks</span></li>
+          <li><span class="n">8</span><div><b>The tidy house</b><span class="d">Drawers, linen, wardrobes. Small habits that last.</span></div><span class="c">12 tricks</span></li>
+        </ol>
+        <div class="anatomy">
+          <div><b>The claim</b><p>The trick, exactly as the video promised it.</p></div>
+          <div><b>The verdict</b><p>True, half true or false, with no maybe.</p></div>
+          <div><b>The reason</b><p>What is really happening, in plain words.</p></div>
+          <div><b>The method</b><p>How I do it, and the detail everyone forgets.</p></div>
+        </div>
+        <div class="book-actions">
+          <a class="btn" href="#offers">See the two editions</a>
+          <button class="btn ghost" type="button" data-open="3">Read sample pages</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="foryou">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Is this for you?</div>
+      <h2>You will like this book if…</h2>
+    </div>
+    <div class="grid">
+      <div class="item"><i>✓</i><p><b>You have tried a trick from a video</b> and it did nothing, except waste your lemon and your afternoon.</p></div>
+      <div class="item"><i>✓</i><p><b>You want to know why</b>, not only what. When you understand the reason, you never forget the method.</p></div>
+      <div class="item"><i>✓</i><p><b>You run a home</b> and you would like it to take a little less time, money and food.</p></div>
+      <div class="item"><i>✓</i><p><b>You prefer paper</b>, or at least something you can keep. No app, no account, no subscription.</p></div>
+      <div class="item"><i>✓</i><p><b>You worry about your surfaces</b>: stone, wood, brass. Every cleaning page tells you what to avoid.</p></div>
+      <div class="item"><i>✓</i><p><b>You miss the way your grandmother did it.</b> Some of her habits were right all along. Now you can know which.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="offers">
+  <div class="wrap">
+    <div class="head center">
+      <div class="eyebrow">Choose your edition</div>
+      <h2>The book alone, or my whole kitchen ledger.</h2>
+      <p>One payment, instant PDF, yours to keep. Read it on your phone, tablet or computer, or print it.</p>
+    </div>
+    <div class="offers">
+      <article class="offer">
+        <div class="kind">The book</div>
+        <h3>The Big Book of Verdicts</h3>
+        <p class="desc">All 101 tricks, checked and explained, with the method for each one.</p>
+        <ul>
+          <li>101 tricks in 8 chapters <em></em></li>
+          <li>The verdict, the reason and the method for each <em></em></li>
+          <li>Large, easy-to-read type, printable <em></em></li>
+        </ul>
+        <div class="price"><strong>$19</strong><span>One-time payment · instant PDF</span></div>
+        <button class="btn ghost block" type="button" data-buy="book">Get the Big Book · $19</button>
+      </article>
+      <article class="offer main">
+        <span class="ribbon">Odette's pick · best value</span>
+        <div class="kind">The complete ledger</div>
+        <h3>Odette's Kitchen Ledger</h3>
+        <p class="desc">The Big Book, plus the three things I keep on my own fridge and in my own drawer.</p>
+        <ul>
+          <li>The Big Book of Verdicts <em>$19</em></li>
+          <li>The Fridge &amp; Pantry Chart Set: how long it keeps, stains, surfaces, conversions <em>$12</em></li>
+          <li>Recipes from My Carnet: 25 French family recipes, the simple everyday ones <em>$12</em></li>
+          <li>The Sunday Reset: my 20-minute weekly routine, printable <em>$9</em></li>
+        </ul>
+        <p class="note">Everything I use, in one place.</p>
+        <div class="price"><strong>$29</strong><s>$52</s><span>One-time payment · you save $23 compared with buying each separately</span></div>
+        <button class="btn block" type="button" data-buy="ledger">Get the Kitchen Ledger · $29</button>
+      </article>
+    </div>
+    <p class="paynote">Secure card payment · instant download · no subscription</p>
+  </div>
+</section>
+
+<section class="promise">
+  <div class="wrap">
+    <div class="seal"><span><b>14</b>days<br>my word</span></div>
+    <div>
+      <div class="eyebrow">My promise</div>
+      <p style="margin-top:10px">Read it. Try three tricks in your own kitchen. If the book doesn't earn its place in your drawer, write to me within 14 days and you get every cent back. No form, no explanation needed. A verdict should be honest, and so should a shop.</p>
+      <div class="sig">— Odette</div>
+    </div>
+  </div>
+</section>
+
+<section class="inside" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Not sure yet?</div>
+      <h2>Read my free notebook first.</h2>
+      <p>The first twelve tricks, the same way the book is written. Turn the pages here, or leave your email to keep it.</p>
+    </div>
+    <div class="shelf" id="shelf" aria-label="Free notebook pages"></div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <figure class="snap"><img src="img/odette-face.jpg" alt="Portrait of Odette, smiling, round tortoiseshell glasses" width="572" height="1024"><figcaption>c'est moi</figcaption></figure>
+    <div>
+      <div class="eyebrow">About Odette</div>
+      <p class="line" style="margin-top:12px">Odette is a character, brought to life with AI. The tricks are real, and so is the checking.</p>
+      <p>She is seventy-something, French, wears a slate-blue apron, and has no patience for tricks that only work on camera. Every verdict, on the channel and in the books, is written to hold up in your own kitchen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:24px">
+      <div class="eyebrow">Questions</div>
+      <h2>Before you ask.</h2>
+    </div>
+    <details><summary>How do I receive the book?</summary><p>Right after payment you get a download link on screen and by email. It is a PDF: it opens on any phone, tablet or computer, and prints on normal paper.</p></details>
+    <details><summary>Is the type easy to read?</summary><p>Yes. The book uses large type and short paragraphs, with one or two tricks per page. Many readers print the chapters they use most and keep them in a folder.</p></details>
+    <details><summary>Is Odette a real person?</summary><p>No. Odette is a fictional character created with AI for the Odette Says channel. The tricks, the explanations and the methods are real, and they are written to be tested at home.</p></details>
+    <details><summary>Are the cleaning tricks safe for my surfaces?</summary><p>Every cleaning page lists the surfaces to avoid. Test on a hidden spot first, follow your appliance's manual, and never mix vinegar or lemon with bleach.</p></details>
+    <details><summary>Can I give it as a present?</summary><p>Yes. At checkout you can add a gift copy for someone you love. They receive their own copy by email, with a short note from you.</p></details>
+    <details><summary>What if it isn't for me?</summary><p>Write within 14 days and you get a full refund. No form, no questions.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="paper">
+      <p>Ma chère,</p>
+      <p>You don't need more tricks. You have a phone full of them. What you need is to know which ones are worth your lemon, your afternoon and your good tablecloth.</p>
+      <p>That is all this book is: my notebook, honest from the first page to the last.</p>
+      <div class="sig">Bisous, Odette</div>
+      <p class="ps">P.S. If you only take one thing, take the free notebook. Twelve tricks, and you will know very quickly if you like the way I check them.</p>
+      <div class="ctas">
+        <button class="btn" type="button" data-buy="ledger">Get the Kitchen Ledger · $29</button>
+        <a class="btn ghost" href="#top">Start with the free notebook</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links"><span>@odettesays</span><span>TikTok</span><span>Instagram</span><span>YouTube</span></div>
+    <p>Odette is a fictional character created with AI. Content is general household guidance, not professional advice. Check your manufacturer's instructions, test cleaning methods on a hidden area, and never combine vinegar or lemon with bleach. © Odette Says.</p>
+  </div>
+</footer>
+
+<!-- After free signup: thank-you + one-time offer -->
+<div class="overlay" id="thanks" hidden role="dialog" aria-modal="true" aria-labelledby="t-title">
+  <div class="box">
+    <button class="x" type="button" data-close>Close ✕</button>
+    <div class="eyebrow">Merci, ma chère</div>
+    <h3 id="t-title">Your notebook is on its way.</h3>
+    <p>It is also opening right here. Before you read it, one small thing I only offer on this page:</p>
+    <div class="oto">
+      <div class="thumb">Fridge &amp; Pantry Charts</div>
+      <div>
+        <b style="font-family:var(--display);font-weight:400;font-size:19px">The Fridge &amp; Pantry Chart Set</b>
+        <ul><li>How long it keeps: fridge, freezer, pantry</li><li>The stain chart</li><li>Surfaces that hate vinegar and lemon</li><li>Kitchen conversions</li></ul>
+        <div class="p"><b>$7</b><s>$12</s> · only here, after signing up</div>
+      </div>
+    </div>
+    <button class="btn yolk block" type="button" data-buy="charts">Add the charts for $7</button>
+    <button class="skip" type="button" id="t-skip">No thank you, open my notebook</button>
+    <a class="skip" href="odette-little-notebook.pdf" download style="text-align:center">or download the PDF</a>
+  </div>
+</div>
+
+<!-- Checkout summary with order bump -->
+<div class="overlay" id="checkout" hidden role="dialog" aria-modal="true" aria-labelledby="c-title">
+  <div class="box">
+    <button class="x" type="button" data-close>Close ✕</button>
+    <div class="eyebrow">Your order</div>
+    <h3 id="c-title">Odette's Kitchen Ledger</h3>
+    <div class="summary">
+      <div><span id="c-item">Odette's Kitchen Ledger</span><span id="c-price">$29</span></div>
+      <div id="c-gift-row" hidden><span>Gift copy</span><span>$9</span></div>
+      <div class="tot"><span>Total</span><span id="c-total">$29</span></div>
+    </div>
+    <label class="bump" for="c-gift">
+      <input type="checkbox" id="c-gift">
+      <div><b>Yes, add a gift copy for $9</b><span>Someone you love receives their own copy by email, with a note from you. Mothers, sisters and friends who cook love it.</span></div>
+    </label>
+    <form class="signup" data-form="checkout" novalidate>
+      <input id="email-checkout" type="email" placeholder="Your email address" aria-label="Your email address" autocomplete="email" required>
+      <button class="btn" type="submit" id="c-pay">Continue to payment</button>
+    </form>
+    <p class="err" data-err="checkout" hidden></p>
+    <p class="okmsg" id="c-ok" hidden></p>
+    <p style="font-family:var(--ui);font-size:13px">Instant PDF · 14-day refund · no subscription</p>
+  </div>
+</div>
+
+<div class="reader" id="reader" hidden role="dialog" aria-modal="true" aria-label="Odette's Little Notebook">
+  <button class="close" type="button" id="r-close">Close ✕</button>
+  <img id="r-img" src="pages/p-01.jpg" alt="">
+  <div class="bar">
+    <button type="button" id="r-prev">← Prev</button>
+    <span id="r-count">1 / 12</span>
+    <button type="button" id="r-next">Next →</button>
+    <a href="odette-little-notebook.pdf" download style="color:#F1C232;font-weight:600">Download PDF</a>
+  </div>
+</div>
+
+<script>
+/* ---- Connect your tools here once the page is hosted ----
+   CHECKOUT_LINKS: paste your payment links (Systeme.io, Stripe Payment Links, Gumroad…).
+   While a link is empty, the button collects the email for the launch list instead.
+   handleEmail(): send the address to your email tool. */
+const CHECKOUT_LINKS = { book:"", ledger:"", charts:"", ledger_gift:"", book_gift:"" };
+function handleEmail(email, source){ /* e.g. fetch to your email tool's form endpoint */ }
+
+const PRODUCTS = {
+  book:   {name:"The Big Book of Verdicts", price:19, bump:true},
+  ledger: {name:"Odette's Kitchen Ledger", price:29, bump:true},
+  charts: {name:"The Fridge & Pantry Chart Set", price:7, bump:false}
+};
+
+/* game */
+const TRICKS = [
+  {tag:"Kitchen", claim:"Shake garlic between two bowls and it peels itself.", v:"half", why:"It works on drier garlic, and only if you shake hard for 20 to 30 seconds. Fresh, moist garlic keeps its skin."},
+  {tag:"House", claim:"White vinegar descales a kettle.", v:"true", why:"Limescale is calcium carbonate, and the acid in vinegar dissolves it. Half vinegar, half water, boil, wait an hour, rinse twice."},
+  {tag:"House", claim:"You can fold a fitted sheet perfectly in ten seconds.", v:"false", why:"Ten seconds is for the camera. Tuck the corners into each other and it takes a calm minute, which is still very good."},
+  {tag:"Kitchen", claim:"Eggs put straight into boiling water peel more easily.", v:"true", why:"The white sets fast and lets go of the membrane under the shell. Into cold water after, then peel from the wide end."},
+  {tag:"House", claim:"A lemon in the microwave cleans it by itself.", v:"half", why:"The steam does the cleaning. The lemon only adds the smell. Plain water works almost as well."},
+  {tag:"Kitchen", claim:"A cold onion won't make you cry.", v:"half", why:"Cold slows the stinging gas, but alone it isn't enough. Cold, a sharp blade, and the root end cut last."}
+];
+const LABEL = {true:"True", half:"Half true", false:"False"};
+let right = 0, answered = 0;
+const cards = document.getElementById("cards");
+TRICKS.forEach(t=>{
+  const c = document.createElement("article");
+  c.className = "card";
+  c.innerHTML = `<div class="tag">${t.tag}</div><h3>“${t.claim}”</h3>
+    <div class="choices" role="group" aria-label="Your verdict">${["true","half","false"].map(k=>`<button type="button" data-k="${k}">${LABEL[k]}</button>`).join("")}</div>
+    <div class="reveal" aria-live="polite"></div>`;
+  c.querySelectorAll(".choices button").forEach(b=>b.addEventListener("click",()=>{
+    const ok = b.dataset.k === t.v; if (ok) right++; answered++;
+    c.querySelector(".reveal").innerHTML = `<div class="row"><span class="stamp ${t.v}">${LABEL[t.v]}</span><span class="you ${ok?"right":"wrong"}">${ok?"You got it.":"You said "+LABEL[b.dataset.k].toLowerCase()+"."}</span></div><p>${t.why}</p>`;
+    c.classList.add("done");
+    document.getElementById("score").textContent = right + " / 6";
+    if (answered === 6) document.getElementById("game-msg").textContent =
+      right >= 5 ? `${right} out of 6. You have a good eye, ma chère.` : right >= 3 ? `${right} out of 6. Not bad. The book will do the rest.` : `${right} out of 6. You see why I check everything.`;
+  }));
+  cards.appendChild(c);
+});
+
+/* reader */
+const PAGES = Array.from({length:12},(_,i)=>`pages/p-${String(i+1).padStart(2,"0")}.jpg`);
+const NAMES = ["Cover","A letter from Odette","How to read the verdicts","Garlic · Kettle","Parsley · Fitted sheet","Eggs · Microwave","Onion · Tap","Sauce · Steel sink","Avocado · T-shirts","The fridge sheet","Your turn","The full notebook"];
+const shelf = document.getElementById("shelf");
+PAGES.forEach((src,i)=>{
+  const b = document.createElement("button");
+  b.type = "button"; b.dataset.open = i; b.setAttribute("aria-label", `Open page ${i+1}: ${NAMES[i]}`);
+  b.innerHTML = `<img src="${src}" alt="" width="875" height="1240">${i+1} · ${NAMES[i]}`;
+  shelf.appendChild(b);
+});
+const reader = document.getElementById("reader"), rImg = document.getElementById("r-img"), rCount = document.getElementById("r-count");
+let page = 0, lastFocus = null;
+function show(n){ page = Math.max(0, Math.min(PAGES.length-1, n)); rImg.src = PAGES[page]; rImg.alt = `Page ${page+1}: ${NAMES[page]}`;
+  rCount.textContent = `${page+1} / ${PAGES.length}`; document.getElementById("r-prev").disabled = page===0; document.getElementById("r-next").disabled = page===PAGES.length-1; }
+function openReader(n){ show(n); reader.hidden = false; document.getElementById("r-next").focus(); }
+function closeReader(){ reader.hidden = true; lastFocus && lastFocus.focus(); }
+document.getElementById("r-prev").onclick = ()=>show(page-1);
+document.getElementById("r-next").onclick = ()=>show(page+1);
+document.getElementById("r-close").onclick = closeReader;
+reader.addEventListener("click", e=>{ if (e.target===reader) closeReader(); });
+
+/* overlays */
+const thanks = document.getElementById("thanks"), checkout = document.getElementById("checkout");
+function openOverlay(el, focusSel){ lastFocus = document.activeElement; el.hidden = false; const f = el.querySelector(focusSel); f && f.focus(); }
+function closeOverlay(el){ el.hidden = true; lastFocus && lastFocus.focus && lastFocus.focus(); }
+document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>closeOverlay(b.closest(".overlay"))));
+document.querySelectorAll(".overlay").forEach(o=>o.addEventListener("click",e=>{ if (e.target===o) closeOverlay(o); }));
+document.getElementById("t-skip").onclick = ()=>{ thanks.hidden = true; openReader(0); };
+
+let current = "ledger";
+const gift = document.getElementById("c-gift");
+function renderCheckout(){
+  const p = PRODUCTS[current], g = p.bump && gift.checked;
+  document.getElementById("c-title").textContent = p.name;
+  document.getElementById("c-item").textContent = p.name;
+  document.getElementById("c-price").textContent = "$" + p.price;
+  document.getElementById("c-gift-row").hidden = !g;
+  document.getElementById("c-total").textContent = "$" + (p.price + (g ? 9 : 0));
+  document.querySelector(".bump").hidden = !p.bump;
+  const live = CHECKOUT_LINKS[g ? current + "_gift" : current];
+  document.getElementById("c-pay").textContent = live ? "Continue to payment" : "Reserve at this price";
+}
+gift.addEventListener("change", renderCheckout);
+document.addEventListener("click", e=>{
+  const o = e.target.closest("[data-open]"); if (o){ lastFocus = o; openReader(+o.dataset.open); return; }
+  const b = e.target.closest("[data-buy]");
+  if (b){ current = b.dataset.buy; gift.checked = false; thanks.hidden = true;
+    document.getElementById("c-ok").hidden = true; document.querySelector('[data-err="checkout"]').hidden = true;
+    renderCheckout(); openOverlay(checkout, "#email-checkout"); }
+});
+document.addEventListener("keydown", e=>{
+  if (e.key==="Escape"){ if(!reader.hidden) closeReader(); else document.querySelectorAll(".overlay:not([hidden])").forEach(closeOverlay); }
+  if (!reader.hidden && e.key==="ArrowRight") show(page+1);
+  if (!reader.hidden && e.key==="ArrowLeft") show(page-1);
+});
+
+/* forms */
+const valid = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+document.querySelectorAll("form[data-form]").forEach(f=>f.addEventListener("submit", e=>{
+  e.preventDefault();
+  const where = f.dataset.form, input = f.querySelector("input"), err = document.querySelector(`[data-err="${where}"]`);
+  const email = input.value.trim();
+  if (!valid(email)){ err.hidden = false; err.textContent = "That address looks incomplete. Check the part after the @ and try again."; input.focus(); return; }
+  err.hidden = true;
+  if (where === "checkout"){
+    const g = PRODUCTS[current].bump && gift.checked, key = g ? current + "_gift" : current, live = CHECKOUT_LINKS[key];
+    handleEmail(email, "checkout:" + key);
+    if (live){ location.href = live; return; }
+    const ok = document.getElementById("c-ok"); ok.hidden = false;
+    ok.textContent = "You're on the launch list at this price. I'll write to you the day it opens, and your free notebook is yours today.";
+    input.value = ""; return;
+  }
+  handleEmail(email, "notebook:" + where);
+  input.value = "";
+  openOverlay(thanks, "[data-buy='charts']");
+}));
+</script>
+</body>
+</html>
